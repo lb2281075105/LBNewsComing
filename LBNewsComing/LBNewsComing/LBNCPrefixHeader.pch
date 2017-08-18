@@ -9,3 +9,7 @@
 ///头文件
 
 #import "WMPageController.h"
+#import "AFNetworking.h"
+#import "NSObject+Hint.h"
+#import "MBProgressHUD.h"
+#import "MJExtension.h"

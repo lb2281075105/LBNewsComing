@@ -21,6 +21,14 @@
 		F8759C4A1F4695DF009DADF7 /* LBNCNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C491F4695DE009DADF7 /* LBNCNewsController.m */; };
 		F8759C4D1F4695EE009DADF7 /* LBNCVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C4C1F4695EE009DADF7 /* LBNCVideoController.m */; };
 		F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C521F46BE87009DADF7 /* LBNCListController.m */; };
+		F8759C561F46C6C7009DADF7 /* LBNCDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C551F46C6C7009DADF7 /* LBNCDetailController.m */; };
+		F8759C591F46CA23009DADF7 /* LBNCBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C581F46CA23009DADF7 /* LBNCBaseViewModel.m */; };
+		F8759C5F1F46CC67009DADF7 /* LBNCNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C5E1F46CC67009DADF7 /* LBNCNewsViewModel.m */; };
+		F8759C621F46CD9B009DADF7 /* LBNCBaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C611F46CD9B009DADF7 /* LBNCBaseNetManager.m */; };
+		F8759C691F46CF56009DADF7 /* NSObject+Hint.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C681F46CF56009DADF7 /* NSObject+Hint.m */; };
+		F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C6B1F46D216009DADF7 /* LBNCNewsNetManager.m */; };
+		F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C711F46D476009DADF7 /* LBNCBaseModel.m */; };
+		F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C741F46D491009DADF7 /* LBNCNewsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,22 @@
 		F8759C501F46B9E4009DADF7 /* LBNCPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCPrefixHeader.pch; sourceTree = "<group>"; };
 		F8759C511F46BE87009DADF7 /* LBNCListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCListController.h; sourceTree = "<group>"; };
 		F8759C521F46BE87009DADF7 /* LBNCListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCListController.m; sourceTree = "<group>"; };
+		F8759C541F46C6C7009DADF7 /* LBNCDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCDetailController.h; sourceTree = "<group>"; };
+		F8759C551F46C6C7009DADF7 /* LBNCDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCDetailController.m; sourceTree = "<group>"; };
+		F8759C571F46CA23009DADF7 /* LBNCBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCBaseViewModel.h; sourceTree = "<group>"; };
+		F8759C581F46CA23009DADF7 /* LBNCBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCBaseViewModel.m; sourceTree = "<group>"; };
+		F8759C5D1F46CC67009DADF7 /* LBNCNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsViewModel.h; sourceTree = "<group>"; };
+		F8759C5E1F46CC67009DADF7 /* LBNCNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsViewModel.m; sourceTree = "<group>"; };
+		F8759C601F46CD9B009DADF7 /* LBNCBaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCBaseNetManager.h; sourceTree = "<group>"; };
+		F8759C611F46CD9B009DADF7 /* LBNCBaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCBaseNetManager.m; sourceTree = "<group>"; };
+		F8759C671F46CF56009DADF7 /* NSObject+Hint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Hint.h"; sourceTree = "<group>"; };
+		F8759C681F46CF56009DADF7 /* NSObject+Hint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Hint.m"; sourceTree = "<group>"; };
+		F8759C6A1F46D216009DADF7 /* LBNCNewsNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsNetManager.h; sourceTree = "<group>"; };
+		F8759C6B1F46D216009DADF7 /* LBNCNewsNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsNetManager.m; sourceTree = "<group>"; };
+		F8759C701F46D476009DADF7 /* LBNCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCBaseModel.h; sourceTree = "<group>"; };
+		F8759C711F46D476009DADF7 /* LBNCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCBaseModel.m; sourceTree = "<group>"; };
+		F8759C731F46D491009DADF7 /* LBNCNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsModel.h; sourceTree = "<group>"; };
+		F8759C741F46D491009DADF7 /* LBNCNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +178,11 @@
 		F8759C291F4688DE009DADF7 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				F8759C601F46CD9B009DADF7 /* LBNCBaseNetManager.h */,
+				F8759C611F46CD9B009DADF7 /* LBNCBaseNetManager.m */,
+				F8759C631F46CDE1009DADF7 /* chartNetManager */,
+				F8759C641F46CDE1009DADF7 /* newsNetManager */,
+				F8759C651F46CDE1009DADF7 /* videoNetManager */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -168,6 +197,11 @@
 		F8759C2B1F4688FD009DADF7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F8759C701F46D476009DADF7 /* LBNCBaseModel.h */,
+				F8759C711F46D476009DADF7 /* LBNCBaseModel.m */,
+				F8759C6D1F46D46E009DADF7 /* LBNCChartModel */,
+				F8759C6E1F46D46E009DADF7 /* LBNCNewsModel */,
+				F8759C6F1F46D46E009DADF7 /* LBNCVideoModel */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -175,6 +209,11 @@
 		F8759C2C1F46890F009DADF7 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F8759C571F46CA23009DADF7 /* LBNCBaseViewModel.h */,
+				F8759C581F46CA23009DADF7 /* LBNCBaseViewModel.m */,
+				F8759C5A1F46CC46009DADF7 /* chartViewModel */,
+				F8759C5B1F46CC46009DADF7 /* newsViewModel */,
+				F8759C5C1F46CC46009DADF7 /* videoViewModel */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -201,6 +240,7 @@
 		F8759C2F1F468988009DADF7 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F8759C661F46CF56009DADF7 /* NSObject+Hint */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -255,6 +295,8 @@
 				F8759C491F4695DE009DADF7 /* LBNCNewsController.m */,
 				F8759C511F46BE87009DADF7 /* LBNCListController.h */,
 				F8759C521F46BE87009DADF7 /* LBNCListController.m */,
+				F8759C541F46C6C7009DADF7 /* LBNCDetailController.h */,
+				F8759C551F46C6C7009DADF7 /* LBNCDetailController.m */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -266,6 +308,84 @@
 				F8759C4C1F4695EE009DADF7 /* LBNCVideoController.m */,
 			);
 			path = video;
+			sourceTree = "<group>";
+		};
+		F8759C5A1F46CC46009DADF7 /* chartViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = chartViewModel;
+			sourceTree = "<group>";
+		};
+		F8759C5B1F46CC46009DADF7 /* newsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C5D1F46CC67009DADF7 /* LBNCNewsViewModel.h */,
+				F8759C5E1F46CC67009DADF7 /* LBNCNewsViewModel.m */,
+			);
+			path = newsViewModel;
+			sourceTree = "<group>";
+		};
+		F8759C5C1F46CC46009DADF7 /* videoViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = videoViewModel;
+			sourceTree = "<group>";
+		};
+		F8759C631F46CDE1009DADF7 /* chartNetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = chartNetManager;
+			sourceTree = "<group>";
+		};
+		F8759C641F46CDE1009DADF7 /* newsNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C6A1F46D216009DADF7 /* LBNCNewsNetManager.h */,
+				F8759C6B1F46D216009DADF7 /* LBNCNewsNetManager.m */,
+			);
+			path = newsNetManager;
+			sourceTree = "<group>";
+		};
+		F8759C651F46CDE1009DADF7 /* videoNetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = videoNetManager;
+			sourceTree = "<group>";
+		};
+		F8759C661F46CF56009DADF7 /* NSObject+Hint */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C671F46CF56009DADF7 /* NSObject+Hint.h */,
+				F8759C681F46CF56009DADF7 /* NSObject+Hint.m */,
+			);
+			path = "NSObject+Hint";
+			sourceTree = "<group>";
+		};
+		F8759C6D1F46D46E009DADF7 /* LBNCChartModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBNCChartModel;
+			sourceTree = "<group>";
+		};
+		F8759C6E1F46D46E009DADF7 /* LBNCNewsModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C731F46D491009DADF7 /* LBNCNewsModel.h */,
+				F8759C741F46D491009DADF7 /* LBNCNewsModel.m */,
+			);
+			path = LBNCNewsModel;
+			sourceTree = "<group>";
+		};
+		F8759C6F1F46D46E009DADF7 /* LBNCVideoModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBNCVideoModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,14 +512,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8759C5F1F46CC67009DADF7 /* LBNCNewsViewModel.m in Sources */,
 				F8759C371F469164009DADF7 /* LBNCTabBarController.m in Sources */,
 				F8759C3A1F4693EC009DADF7 /* LBNCNavController.m in Sources */,
 				F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */,
+				F8759C561F46C6C7009DADF7 /* LBNCDetailController.m in Sources */,
+				F8759C621F46CD9B009DADF7 /* LBNCBaseNetManager.m in Sources */,
 				F8759C281F468865009DADF7 /* AppDelegate.m in Sources */,
 				F8759C181F468635009DADF7 /* LBNewsComing.xcdatamodeld in Sources */,
 				F8759C471F4695CB009DADF7 /* LBNCChartController.m in Sources */,
 				F8759C441F4695BA009DADF7 /* LBNCMineController.m in Sources */,
+				F8759C691F46CF56009DADF7 /* NSObject+Hint.m in Sources */,
 				F8759C0C1F468635009DADF7 /* main.m in Sources */,
+				F8759C591F46CA23009DADF7 /* LBNCBaseViewModel.m in Sources */,
+				F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */,
+				F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */,
+				F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */,
 				F8759C4A1F4695DF009DADF7 /* LBNCNewsController.m in Sources */,
 				F8759C4D1F4695EE009DADF7 /* LBNCVideoController.m in Sources */,
 			);

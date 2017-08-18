@@ -7,9 +7,9 @@
 //
 
 #import "LBNCListController.h"
-
+#import "LBNCNewsViewModel.h"
 @interface LBNCListController ()
-
+@property (strong, nonatomic) LBNCNewsViewModel *newsViewModel;
 @end
 
 @implementation LBNCListController
@@ -18,20 +18,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(LBNCNewsViewModel *)newsViewModel{
+    if (_newsViewModel == nil) {
+        _newsViewModel = [[LBNCNewsViewModel alloc]initWithType:self.infoType.integerValue];
+    }
+    return _newsViewModel;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

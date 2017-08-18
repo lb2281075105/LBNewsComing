@@ -22,7 +22,8 @@
 {
     self = [super initWithViewControllerClasses:[self childControllerClasses] andTheirTitles:[self titleNames]];
     if (self) {
-        
+        self.keys = [self vcKeys];
+        self.values = [self vcValues];
     }
     return self;
 }
