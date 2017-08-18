@@ -20,6 +20,7 @@
 		F8759C471F4695CB009DADF7 /* LBNCChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C461F4695CB009DADF7 /* LBNCChartController.m */; };
 		F8759C4A1F4695DF009DADF7 /* LBNCNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C491F4695DE009DADF7 /* LBNCNewsController.m */; };
 		F8759C4D1F4695EE009DADF7 /* LBNCVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C4C1F4695EE009DADF7 /* LBNCVideoController.m */; };
+		F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C521F46BE87009DADF7 /* LBNCListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,10 @@
 		F8759C491F4695DE009DADF7 /* LBNCNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsController.m; sourceTree = "<group>"; };
 		F8759C4B1F4695EE009DADF7 /* LBNCVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoController.h; sourceTree = "<group>"; };
 		F8759C4C1F4695EE009DADF7 /* LBNCVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoController.m; sourceTree = "<group>"; };
+		F8759C4F1F46B9A4009DADF7 /* LBNCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCHeader.h; sourceTree = "<group>"; };
+		F8759C501F46B9E4009DADF7 /* LBNCPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCPrefixHeader.pch; sourceTree = "<group>"; };
+		F8759C511F46BE87009DADF7 /* LBNCListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCListController.h; sourceTree = "<group>"; };
+		F8759C521F46BE87009DADF7 /* LBNCListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,8 @@
 				F8759C1E1F468636009DADF7 /* Info.plist */,
 				F8759C161F468635009DADF7 /* LBNewsComing.xcdatamodeld */,
 				F8759C0A1F468635009DADF7 /* Supporting Files */,
+				F8759C4F1F46B9A4009DADF7 /* LBNCHeader.h */,
+				F8759C501F46B9E4009DADF7 /* LBNCPrefixHeader.pch */,
 			);
 			path = LBNewsComing;
 			sourceTree = "<group>";
@@ -246,6 +253,8 @@
 			children = (
 				F8759C481F4695DE009DADF7 /* LBNCNewsController.h */,
 				F8759C491F4695DE009DADF7 /* LBNCNewsController.m */,
+				F8759C511F46BE87009DADF7 /* LBNCListController.h */,
+				F8759C521F46BE87009DADF7 /* LBNCListController.m */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 			files = (
 				F8759C371F469164009DADF7 /* LBNCTabBarController.m in Sources */,
 				F8759C3A1F4693EC009DADF7 /* LBNCNavController.m in Sources */,
+				F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */,
 				F8759C281F468865009DADF7 /* AppDelegate.m in Sources */,
 				F8759C181F468635009DADF7 /* LBNewsComing.xcdatamodeld in Sources */,
 				F8759C471F4695CB009DADF7 /* LBNCChartController.m in Sources */,
@@ -514,6 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MECQS3Z269;
+				GCC_PREFIX_HEADER = LBNewsComing/LBNCPrefixHeader.pch;
 				INFOPLIST_FILE = LBNewsComing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -529,6 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MECQS3Z269;
+				GCC_PREFIX_HEADER = LBNewsComing/LBNCPrefixHeader.pch;
 				INFOPLIST_FILE = LBNewsComing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

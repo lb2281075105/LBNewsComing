@@ -7,7 +7,7 @@
 //
 
 #import "LBNCNewsController.h"
-
+#import "LBNCListController.h"
 @interface LBNCNewsController ()
 
 @end
@@ -18,20 +18,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)init
+{
+    self = [super initWithViewControllerClasses:[self childControllerClasses] andTheirTitles:[self titleNames]];
+    if (self) {
+        
+    }
+    return self;
+}
+- (NSArray *)titleNames{
+    return @[@"最新",@"新闻",@"评测",@"导购",@"用车",@"技术",@"文化",@"改装",@"游记",];
+}
+- (NSArray *)childControllerClasses {
+    NSMutableArray *mArr = [NSMutableArray new];
+    for (int i = 0; i < [self titleNames].count; i++) {
+        [mArr addObject:[LBNCListController class]];
+    }
+    return [mArr copy];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSArray *)vcKeys {
+    NSMutableArray *mArr = [NSMutableArray new];
+    for (int i = 0; i < [self titleNames].count; i++) {
+        [mArr addObject:@"infoType"];
+    }
+    return [mArr copy];
 }
-*/
 
+- (NSArray *)vcValues {
+    NSMutableArray *mArr = [NSMutableArray new];
+    for (int i = 0; i < [self titleNames].count; i++) {
+        [mArr addObject:@(i)];
+    }
+    return [mArr copy];
+}
 @end

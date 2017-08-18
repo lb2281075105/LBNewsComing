@@ -1,5 +1,5 @@
 //
-//  LBNCNewsController.h
+//  LBNCListController.h
 //  LBNewsComing
 //
 //  Created by yunmei on 2017/8/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBNCNewsController : WMPageController
+@interface LBNCListController : UIViewController
 
 @end

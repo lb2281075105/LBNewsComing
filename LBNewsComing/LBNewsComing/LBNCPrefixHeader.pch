@@ -1,13 +1,11 @@
 //
-//  LBNCNewsController.h
+//  LBNCPrefixHeader.pch
 //  LBNewsComing
 //
 //  Created by yunmei on 2017/8/18.
 //  Copyright © 2017年 刘博. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+///头文件
 
-@interface LBNCNewsController : WMPageController
-
-@end
+#import "WMPageController.h"
