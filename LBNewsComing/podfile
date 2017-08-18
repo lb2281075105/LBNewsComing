@@ -1,3 +1,4 @@
 target 'LBNewsComing' do
 pod 'WMPageController', '~> 1.8.0'
+pod 'AFNetworking', '~> 3.1.0'
 end

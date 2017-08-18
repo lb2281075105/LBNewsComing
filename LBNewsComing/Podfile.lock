@@ -1,12 +1,29 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - WMPageController (1.8.9)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - WMPageController (~> 1.8.0)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   WMPageController: fb2d7634ec3885fdc6ec30264e9effb8f67033c9
 
-PODFILE CHECKSUM: 988391b9b390e255868b08669fc6411cfd88507b
+PODFILE CHECKSUM: 02bd6ddf0faa3ba7e2b44c7517954a22ca95d017
 
 COCOAPODS: 1.2.1

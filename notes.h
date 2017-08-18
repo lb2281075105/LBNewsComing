@@ -10,3 +10,4 @@ View controller-based status bar appearance 在info中设置NO；在导航控制
 3.
 第三方框架
 WMPageController(用于滑动控制器)
+AFNetworking
