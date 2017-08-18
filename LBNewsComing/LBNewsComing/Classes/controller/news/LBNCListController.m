@@ -8,8 +8,10 @@
 
 #import "LBNCListController.h"
 #import "LBNCNewsViewModel.h"
+#import "LBNCNewsTableView.h"
 @interface LBNCListController ()
 @property (strong, nonatomic) LBNCNewsViewModel *newsViewModel;
+@property (strong, nonatomic) LBNCNewsTableView *newsTableView;
 @end
 
 @implementation LBNCListController
@@ -24,5 +26,11 @@
     }
     return _newsViewModel;
 }
+-(LBNCNewsTableView *)newsTableView{
 
+    if (_newsTableView == nil) {
+        _newsTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    }
+    return _newsTableView;
+}
 @end

@@ -29,6 +29,12 @@
 		F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C6B1F46D216009DADF7 /* LBNCNewsNetManager.m */; };
 		F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C711F46D476009DADF7 /* LBNCBaseModel.m */; };
 		F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C741F46D491009DADF7 /* LBNCNewsModel.m */; };
+		F8759C7E1F46E8B8009DADF7 /* LBNCChartTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C7D1F46E8B8009DADF7 /* LBNCChartTableView.m */; };
+		F8759C811F46E919009DADF7 /* LBNCNewsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C801F46E919009DADF7 /* LBNCNewsTableView.m */; };
+		F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C831F46E92C009DADF7 /* LBNCVideoTableView.m */; };
+		F8759C871F46E95A009DADF7 /* LBNCChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C861F46E95A009DADF7 /* LBNCChartCell.m */; };
+		F8759C8A1F46E970009DADF7 /* LBNCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C891F46E970009DADF7 /* LBNCNewsCell.m */; };
+		F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +82,18 @@
 		F8759C711F46D476009DADF7 /* LBNCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCBaseModel.m; sourceTree = "<group>"; };
 		F8759C731F46D491009DADF7 /* LBNCNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsModel.h; sourceTree = "<group>"; };
 		F8759C741F46D491009DADF7 /* LBNCNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsModel.m; sourceTree = "<group>"; };
+		F8759C7C1F46E8B8009DADF7 /* LBNCChartTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCChartTableView.h; sourceTree = "<group>"; };
+		F8759C7D1F46E8B8009DADF7 /* LBNCChartTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCChartTableView.m; sourceTree = "<group>"; };
+		F8759C7F1F46E919009DADF7 /* LBNCNewsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsTableView.h; sourceTree = "<group>"; };
+		F8759C801F46E919009DADF7 /* LBNCNewsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsTableView.m; sourceTree = "<group>"; };
+		F8759C821F46E92C009DADF7 /* LBNCVideoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoTableView.h; sourceTree = "<group>"; };
+		F8759C831F46E92C009DADF7 /* LBNCVideoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoTableView.m; sourceTree = "<group>"; };
+		F8759C851F46E95A009DADF7 /* LBNCChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCChartCell.h; sourceTree = "<group>"; };
+		F8759C861F46E95A009DADF7 /* LBNCChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCChartCell.m; sourceTree = "<group>"; };
+		F8759C881F46E970009DADF7 /* LBNCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCNewsCell.h; sourceTree = "<group>"; };
+		F8759C891F46E970009DADF7 /* LBNCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsCell.m; sourceTree = "<group>"; };
+		F8759C8B1F46E987009DADF7 /* LBNCVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoCell.h; sourceTree = "<group>"; };
+		F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +208,9 @@
 		F8759C2A1F4688F0009DADF7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F8759C791F46E881009DADF7 /* chartView */,
+				F8759C7A1F46E881009DADF7 /* newsView */,
+				F8759C7B1F46E881009DADF7 /* videoView */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -388,6 +409,39 @@
 			path = LBNCVideoModel;
 			sourceTree = "<group>";
 		};
+		F8759C791F46E881009DADF7 /* chartView */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C7C1F46E8B8009DADF7 /* LBNCChartTableView.h */,
+				F8759C7D1F46E8B8009DADF7 /* LBNCChartTableView.m */,
+				F8759C851F46E95A009DADF7 /* LBNCChartCell.h */,
+				F8759C861F46E95A009DADF7 /* LBNCChartCell.m */,
+			);
+			path = chartView;
+			sourceTree = "<group>";
+		};
+		F8759C7A1F46E881009DADF7 /* newsView */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C7F1F46E919009DADF7 /* LBNCNewsTableView.h */,
+				F8759C801F46E919009DADF7 /* LBNCNewsTableView.m */,
+				F8759C881F46E970009DADF7 /* LBNCNewsCell.h */,
+				F8759C891F46E970009DADF7 /* LBNCNewsCell.m */,
+			);
+			path = newsView;
+			sourceTree = "<group>";
+		};
+		F8759C7B1F46E881009DADF7 /* videoView */ = {
+			isa = PBXGroup;
+			children = (
+				F8759C821F46E92C009DADF7 /* LBNCVideoTableView.h */,
+				F8759C831F46E92C009DADF7 /* LBNCVideoTableView.m */,
+				F8759C8B1F46E987009DADF7 /* LBNCVideoCell.h */,
+				F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */,
+			);
+			path = videoView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +571,7 @@
 				F8759C3A1F4693EC009DADF7 /* LBNCNavController.m in Sources */,
 				F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */,
 				F8759C561F46C6C7009DADF7 /* LBNCDetailController.m in Sources */,
+				F8759C811F46E919009DADF7 /* LBNCNewsTableView.m in Sources */,
 				F8759C621F46CD9B009DADF7 /* LBNCBaseNetManager.m in Sources */,
 				F8759C281F468865009DADF7 /* AppDelegate.m in Sources */,
 				F8759C181F468635009DADF7 /* LBNewsComing.xcdatamodeld in Sources */,
@@ -526,9 +581,14 @@
 				F8759C0C1F468635009DADF7 /* main.m in Sources */,
 				F8759C591F46CA23009DADF7 /* LBNCBaseViewModel.m in Sources */,
 				F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */,
+				F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */,
+				F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */,
 				F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */,
+				F8759C871F46E95A009DADF7 /* LBNCChartCell.m in Sources */,
 				F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */,
 				F8759C4A1F4695DF009DADF7 /* LBNCNewsController.m in Sources */,
+				F8759C7E1F46E8B8009DADF7 /* LBNCChartTableView.m in Sources */,
+				F8759C8A1F46E970009DADF7 /* LBNCNewsCell.m in Sources */,
 				F8759C4D1F4695EE009DADF7 /* LBNCVideoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
