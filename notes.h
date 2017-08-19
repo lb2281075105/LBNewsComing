@@ -14,6 +14,7 @@ AFNetworking
 MJRefresh
 MJExtension
 MBProgressHUD
+SDCycleScrollView
 
 4.
 网络封装
