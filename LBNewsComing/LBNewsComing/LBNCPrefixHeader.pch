@@ -8,11 +8,20 @@
 
 ///头文件
 
+
+// 类似网易新闻首页，控制器滑动翻页效果的控制器
 #import "WMPageController.h"
 #import "AFNetworking.h"
 #import "NSObject+Hint.h"
+// 实现安卓toast风格提示，弹出提示框架
 #import "MBProgressHUD.h"
+// Json解析类库
 #import "MJExtension.h"
+// 滚动视图头部和脚步刷新效果
 #import "MJRefresh.h"
 //#import "SDWebImage/uiim"
 #import "Masonry.h"
+#import "SDCycleScrollView.h"
+#import "CZAdditions.h"
+// 宏定义引入
+#import "LBNCHeader.h"

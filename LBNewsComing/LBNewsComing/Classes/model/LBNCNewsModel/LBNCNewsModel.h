@@ -10,7 +10,7 @@
 
 @class HomeResultModel,HomeResultHeadlineinfoModel,HomeResultTopnewsinfoModel,HomeResultNewslistModel,HomeResultFocusimgModel;
 
-@interface HomeModel : LBNCBaseModel
+@interface LBNCNewsModel : LBNCBaseModel
 
 @property (nonatomic, strong) HomeResultModel *result;
 @property (nonatomic, assign) NSInteger returncode;

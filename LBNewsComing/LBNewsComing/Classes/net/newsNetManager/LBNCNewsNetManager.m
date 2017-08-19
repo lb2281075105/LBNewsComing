@@ -54,7 +54,8 @@
     }
     
     return [self get:path params:nil completionHandler:^(id responseObj, NSError *error) {
-        completionHandler([LBNCBaseModel mj_objectWithKeyValues:responseObj], error);
+        NSLog(@"news:%@",responseObj);
+        completionHandler([LBNCNewsModel mj_objectWithKeyValues:responseObj], error);
     }];
 }
 

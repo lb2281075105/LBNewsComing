@@ -12,6 +12,7 @@
 #ifdef DEBUG
 ///LBNCLog是不限制参数的，中间用三个英文句号表示
 #define LBNCLog(...) NSLog(__VA_ARGS__)
+#define kHeight [UIScreen cz_screenHeight] / 750.0
 ///如果是发布状态LBNCLog就直接为空
 #elif
 #define LBNCLog(...)

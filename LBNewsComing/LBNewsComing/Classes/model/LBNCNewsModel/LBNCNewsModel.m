@@ -8,7 +8,7 @@
 
 #import "LBNCNewsModel.h"
 
-@implementation HomeModel
+@implementation LBNCNewsModel
 
 @end
 

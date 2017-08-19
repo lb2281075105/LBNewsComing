@@ -25,7 +25,7 @@
 }
 
 - (void)getDataFromNetCompletionHandler:(completionHandler)completionHandler{
-    self.dataTask = [LBNCNewsNetManager getNewsListType:self.type lastTime:self.updateTime page:self.page completionHandler:^(HomeModel *model, NSError *error) {
+    self.dataTask = [LBNCNewsNetManager getNewsListType:self.type lastTime:self.updateTime page:self.page completionHandler:^(LBNCNewsModel *model, NSError *error) {
         if (!error){
             if (self.page == 1) {
                 [self.dataMArr removeAllObjects];
