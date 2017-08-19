@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 typedef void(^completionHandler)(NSError *error);
+// mark -- 注意block delegate
 @protocol BaseViewModelDelegate <NSObject>
 @optional
 // 获取数据
@@ -18,7 +19,7 @@ typedef void(^completionHandler)(NSError *error);
 - (void)getMoreDataCompletionHandler:(completionHandler)completionHandler;
 @end
 // MARK---<BaseViewModelDelegate>
-@interface LBNCBaseViewModel : NSObject
+@interface LBNCBaseViewModel : NSObject<BaseViewModelDelegate>
 @property (strong, nonatomic) NSMutableArray *dataMArr;
 @property (strong, nonatomic) NSURLSessionDataTask *dataTask;
 

@@ -6,7 +6,7 @@
 //  Copyright © 2017年 刘博. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import "LBNCBaseViewModel.h"
 #import "LBNCNewsNetManager.h"
 @interface LBNCNewsViewModel : LBNCBaseViewModel
