@@ -29,7 +29,7 @@
 -(LBNCNewsTableView *)newsTableView{
 
     if (_newsTableView == nil) {
-        _newsTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _newsTableView = [[LBNCNewsTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     }
     return _newsTableView;
 }

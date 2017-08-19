@@ -16,20 +16,23 @@ PODS:
     - AFNetworking/NSURLSession
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - WMPageController (1.8.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - MBProgressHUD (~> 0.9)
   - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
   - WMPageController (~> 1.8.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   WMPageController: fb2d7634ec3885fdc6ec30264e9effb8f67033c9
 
-PODFILE CHECKSUM: cfd0140a7b0bcd0290fd30312a5cedc5a04214bd
+PODFILE CHECKSUM: d75d6f995f953fc9e8b80207f830ab8a0dbffe99
 
 COCOAPODS: 1.2.1
