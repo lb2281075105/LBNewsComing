@@ -1,5 +1,5 @@
 //
-//  LBNCChartCell.h
+//  LBNCDuanziCell.h
 //  LBNewsComing
 //
 //  Created by liubo on 2017/8/20.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class LBNCChartModel;
-@interface LBNCChartCell : UITableViewCell
+
+@interface LBNCDuanziCell : UITableViewCell
 + (instancetype)cellWithTableView:(UITableView *)tableView;
-@property (nonatomic, strong)LBNCChartModel *chartModel;
 @end

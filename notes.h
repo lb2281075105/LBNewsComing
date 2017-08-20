@@ -31,7 +31,13 @@ MVVM模式：
     return @{@"ID":@"id"};
 }
 /** 属性为字典 对应相应的解析类 */
+(3)view model viewModel 每个类都需要分开写
 
+pics = (
+        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAFV54GI0096.jpg,
+        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG054GI0096.jpg,
+        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG154GI0096.jpg,
+        );
 5.
 注意block delegate 一块使用
 LBNCBaseViewModel
@@ -46,3 +52,14 @@ LBNCBaseViewModel
 
 // mark -- 加载失败时候，使表视图cell消失
 _newsTableView.tableFooterView = [UIView new];
+
+6.
+构造函数传递参数initWithID
+
+7.
+图文模块：
+[_iconIV.imageView sd_setImageWithURL:_chartModel.pics[0] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
+@property (nonatomic, strong) NSArray<NSURL *> *pics;
+
+
+
