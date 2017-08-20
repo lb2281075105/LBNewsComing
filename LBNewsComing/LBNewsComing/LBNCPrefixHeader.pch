@@ -37,3 +37,5 @@
 #import <BlocksKit+UIKit.h>
 // 导航返回按钮
 #import "BarItem.h"
+// 图片浏览器
+#import "MWPhotoBrowser.h"

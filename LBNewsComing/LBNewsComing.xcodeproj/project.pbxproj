@@ -666,7 +666,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LBNewsComing/Pods-LBNewsComing-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
