@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    //[self.newsTableView.mj_header beginRefreshing];
-    [self newsTableView];
+    [self.newsTableView.mj_header beginRefreshing];
+//    [self newsTableView];
 }
 -(LBNCNewsViewModel *)newsViewModel{
     if (_newsViewModel == nil) {
@@ -43,6 +43,7 @@
             [self.newsViewModel refreshDataCompletionHandler:^(NSError *error) {
                 if (!error) {
                     //_newsTableView.tableHeaderView = [self setUpTableHeaderView];
+                    self.newsTableView.dataArray = self.newsViewModel.dataMArr;
                 }
                 //[_newsTableView.mj_header endRefreshing];
             }];

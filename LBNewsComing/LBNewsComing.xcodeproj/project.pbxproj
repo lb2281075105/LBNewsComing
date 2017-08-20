@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AD9FCB41F4933C1002EB75B /* LBNCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCB31F4933C1002EB75B /* LBNCImageView.m */; };
 		6A7239FDE3F8DB72CFF7D452 /* libPods-LBNewsComing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */; };
 		F8759C0C1F468635009DADF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C0B1F468635009DADF7 /* main.m */; };
 		F8759C151F468635009DADF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8759C131F468635009DADF7 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		0B97BC6530F0AB897F6A3D05 /* Pods-LBNewsComing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBNewsComing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBNewsComing/Pods-LBNewsComing.debug.xcconfig"; sourceTree = "<group>"; };
+		3AD9FCB21F4933C1002EB75B /* LBNCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCImageView.h; sourceTree = "<group>"; };
+		3AD9FCB31F4933C1002EB75B /* LBNCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCImageView.m; sourceTree = "<group>"; };
 		85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBNewsComing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B3903665C43C99966A8A10 /* Pods-LBNewsComing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBNewsComing.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBNewsComing/Pods-LBNewsComing.release.xcconfig"; sourceTree = "<group>"; };
 		F8759C071F468635009DADF7 /* LBNewsComing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBNewsComing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +154,15 @@
 				85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AD9FCB11F4933C1002EB75B /* LBNCImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3AD9FCB21F4933C1002EB75B /* LBNCImageView.h */,
+				3AD9FCB31F4933C1002EB75B /* LBNCImageView.m */,
+			);
+			path = LBNCImageView;
 			sourceTree = "<group>";
 		};
 		A51440517346E17184A807E7 /* Pods */ = {
@@ -298,6 +310,7 @@
 		F8759C2F1F468988009DADF7 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				3AD9FCB11F4933C1002EB75B /* LBNCImageView */,
 				F8F003F51F47EE0900DA43EA /* Additions */,
 				F8759C661F46CF56009DADF7 /* NSObject+Hint */,
 			);
@@ -547,7 +560,7 @@
 				TargetAttributes = {
 					F8759C061F468635009DADF7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = MECQS3Z269;
+						DevelopmentTeam = 9266GAZZ3C;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -664,6 +677,7 @@
 				F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */,
 				F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */,
 				F8759C871F46E95A009DADF7 /* LBNCChartCell.m in Sources */,
+				3AD9FCB41F4933C1002EB75B /* LBNCImageView.m in Sources */,
 				F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */,
 				F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */,
 				F8F004131F47EE0900DA43EA /* NSString+CZHash.m in Sources */,
@@ -793,7 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = MECQS3Z269;
+				DEVELOPMENT_TEAM = 9266GAZZ3C;
 				GCC_PREFIX_HEADER = LBNewsComing/LBNCPrefixHeader.pch;
 				INFOPLIST_FILE = LBNewsComing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -809,7 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = MECQS3Z269;
+				DEVELOPMENT_TEAM = 9266GAZZ3C;
 				GCC_PREFIX_HEADER = LBNewsComing/LBNCPrefixHeader.pch;
 				INFOPLIST_FILE = LBNewsComing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

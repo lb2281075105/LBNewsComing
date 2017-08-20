@@ -25,9 +25,13 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
 }
+// 估计cell高度
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     LBNCNewsCell *cell = [LBNCNewsCell cellWithTableView:tableView];
-    
+    cell.newsListModel = self.dataArray[indexPath.row];
     return cell;
     
 }

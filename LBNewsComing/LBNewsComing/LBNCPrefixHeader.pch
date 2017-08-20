@@ -12,6 +12,7 @@
 // 类似网易新闻首页，控制器滑动翻页效果的控制器
 #import "WMPageController.h"
 #import "AFNetworking.h"
+// 类型toast提示框
 #import "NSObject+Hint.h"
 // 实现安卓toast风格提示，弹出提示框架
 #import "MBProgressHUD.h"
@@ -21,7 +22,10 @@
 #import "MJRefresh.h"
 //#import "SDWebImage/uiim"
 #import "Masonry.h"
+// 轮播图
 #import "SDCycleScrollView.h"
 #import "CZAdditions.h"
 // 宏定义引入
 #import "LBNCHeader.h"
+//按比例放大、充满 当前视图减掉超出自身区域的图片部分
+#import "LBNCImageView.h"
