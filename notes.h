@@ -41,3 +41,5 @@ LBNCBaseViewModel
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
+// 状态栏的加载框
+[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];

@@ -31,3 +31,9 @@
 #import "LBNCImageView.h"
 // 获取下一级控制器
 #import "UIView+ViewController.h"
+//改变系统的target+selector模式为 block模式,带来紧凑的代码风格，高效率的回调执行
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+// 导航返回按钮
+#import "BarItem.h"
