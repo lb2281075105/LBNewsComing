@@ -42,7 +42,7 @@
 //        _newsTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self.newsViewModel refreshDataCompletionHandler:^(NSError *error) {
                 if (!error) {
-                    //_newsTableView.tableHeaderView = [self setUpTableHeaderView];
+                    _newsTableView.tableHeaderView = [self setUpTableHeaderView];
                     self.newsTableView.dataArray = self.newsViewModel.dataMArr;
                 }
                 //[_newsTableView.mj_header endRefreshing];
@@ -64,10 +64,7 @@
     _topScrollView.backgroundColor = [UIColor orangeColor];
     _topScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
     _topScrollView.currentPageDotColor = [UIColor whiteColor];
-    NSArray *imageUrlArray = @[@"http://imgsrc.baidu.com/imgad/pic/item/267f9e2f07082838b5168c32b299a9014c08f1f9.jpg",@"http://pic49.nipic.com/file/20140927/19617624_230415502002_2.jpg"];
-    _topScrollView.imageURLStringsGroup = imageUrlArray;
+    _topScrollView.imageURLStringsGroup = self.newsViewModel.headImgURLs;
     return _topScrollView;
-    
-    
 }
 @end
