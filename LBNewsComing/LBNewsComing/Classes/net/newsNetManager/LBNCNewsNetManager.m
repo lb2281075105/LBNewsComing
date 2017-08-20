@@ -11,6 +11,7 @@
 @implementation LBNCNewsNetManager
 + (id)getNewsListType:(LBNCNewsListType)type lastTime:(NSString *)lastTime page:(NSInteger)page completionHandler:(void (^)(id, NSError *))completionHandler {
     NSString *path = nil;
+    LBNCLog(@"%ld",type);
     switch (type) {
         case LBNCNewsListTypeZuiXin: {
             path = [NSString stringWithFormat:@"http://app.api.autohome.com.cn/autov5.0.0/news/newslist-pm1-c0-nt0-p%ld-s30-l%@.json", page, lastTime];
@@ -54,7 +55,7 @@
     }
     
     return [self get:path params:nil completionHandler:^(id responseObj, NSError *error) {
-        NSLog(@"news:%@",responseObj);
+        // LBNCLog(@"news:%@",responseObj);
         completionHandler([LBNCNewsModel mj_objectWithKeyValues:responseObj], error);
     }];
 }

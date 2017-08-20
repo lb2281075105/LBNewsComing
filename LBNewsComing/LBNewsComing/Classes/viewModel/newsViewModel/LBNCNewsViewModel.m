@@ -28,6 +28,7 @@
     self.dataTask = [LBNCNewsNetManager getNewsListType:self.type lastTime:self.updateTime page:self.page completionHandler:^(LBNCNewsModel *model, NSError *error) {
         if (!error){
             if (self.page == 1) {
+                // 出错 不会走这个 if 语句里面，数组的东西不会清空
                 [self.dataMArr removeAllObjects];
                 [self.topDataMArr removeAllObjects];
                 NSMutableArray *mArr = [NSMutableArray new];

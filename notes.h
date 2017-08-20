@@ -43,3 +43,6 @@ LBNCBaseViewModel
 }
 // 状态栏的加载框
 [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+
+// mark -- 加载失败时候，使表视图cell消失
+_newsTableView.tableFooterView = [UIView new];

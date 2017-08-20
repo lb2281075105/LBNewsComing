@@ -45,6 +45,8 @@
 
     if (_newsTableView == nil) {
         _newsTableView = [[LBNCNewsTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        // mark -- 加载失败时候，使表视图cell消失
+        _newsTableView.tableFooterView = [UIView new];
         [self.view addSubview:_newsTableView];
         [_newsTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(@0);

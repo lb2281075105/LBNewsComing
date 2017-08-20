@@ -51,10 +51,10 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self hideLoad];
 }
-
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self hideLoad];
+    [self showErrorWithMsg:@"加载失败"];
 }
 
 @end
