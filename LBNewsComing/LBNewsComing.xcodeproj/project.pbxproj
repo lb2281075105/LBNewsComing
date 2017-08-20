@@ -21,6 +21,9 @@
 		3AD9FCDB1F49A39D002EB75B /* LBNCChartDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCDA1F49A39D002EB75B /* LBNCChartDetailController.m */; };
 		3AD9FCDE1F49E657002EB75B /* LBNCDuanziModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCDD1F49E657002EB75B /* LBNCDuanziModel.m */; };
 		3AD9FCE11F49F697002EB75B /* LBNCDuanziDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCE01F49F697002EB75B /* LBNCDuanziDetailController.m */; };
+		3AD9FCE41F49FC94002EB75B /* LBNCVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCE31F49FC94002EB75B /* LBNCVideoViewModel.m */; };
+		3AD9FCE71F49FCAC002EB75B /* LBNCVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCE61F49FCAC002EB75B /* LBNCVideoModel.m */; };
+		3AD9FCEA1F49FCE5002EB75B /* LBNCVideoNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCE91F49FCE5002EB75B /* LBNCVideoNetManager.m */; };
 		6A7239FDE3F8DB72CFF7D452 /* libPods-LBNewsComing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */; };
 		F8759C0C1F468635009DADF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C0B1F468635009DADF7 /* main.m */; };
 		F8759C151F468635009DADF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8759C131F468635009DADF7 /* Main.storyboard */; };
@@ -91,6 +94,12 @@
 		3AD9FCDD1F49E657002EB75B /* LBNCDuanziModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCDuanziModel.m; path = LBNewsComing/Classes/controller/chart/LBNCDuanziModel.m; sourceTree = SOURCE_ROOT; };
 		3AD9FCDF1F49F697002EB75B /* LBNCDuanziDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCDuanziDetailController.h; sourceTree = "<group>"; };
 		3AD9FCE01F49F697002EB75B /* LBNCDuanziDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCDuanziDetailController.m; sourceTree = "<group>"; };
+		3AD9FCE21F49FC94002EB75B /* LBNCVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBNCVideoViewModel.h; path = LBNewsComing/Classes/controller/chart/LBNCVideoViewModel.h; sourceTree = SOURCE_ROOT; };
+		3AD9FCE31F49FC94002EB75B /* LBNCVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCVideoViewModel.m; path = LBNewsComing/Classes/controller/chart/LBNCVideoViewModel.m; sourceTree = SOURCE_ROOT; };
+		3AD9FCE51F49FCAC002EB75B /* LBNCVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBNCVideoModel.h; path = LBNewsComing/Classes/controller/chart/LBNCVideoModel.h; sourceTree = SOURCE_ROOT; };
+		3AD9FCE61F49FCAC002EB75B /* LBNCVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCVideoModel.m; path = LBNewsComing/Classes/controller/chart/LBNCVideoModel.m; sourceTree = SOURCE_ROOT; };
+		3AD9FCE81F49FCE5002EB75B /* LBNCVideoNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBNCVideoNetManager.h; path = LBNewsComing/Classes/controller/chart/LBNCVideoNetManager.h; sourceTree = SOURCE_ROOT; };
+		3AD9FCE91F49FCE5002EB75B /* LBNCVideoNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCVideoNetManager.m; path = LBNewsComing/Classes/controller/chart/LBNCVideoNetManager.m; sourceTree = SOURCE_ROOT; };
 		85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBNewsComing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B3903665C43C99966A8A10 /* Pods-LBNewsComing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBNewsComing.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBNewsComing/Pods-LBNewsComing.release.xcconfig"; sourceTree = "<group>"; };
 		F8759C071F468635009DADF7 /* LBNewsComing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBNewsComing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,8 +341,8 @@
 			children = (
 				F8759C571F46CA23009DADF7 /* LBNCBaseViewModel.h */,
 				F8759C581F46CA23009DADF7 /* LBNCBaseViewModel.m */,
-				F8759C5A1F46CC46009DADF7 /* chartViewModel */,
 				F8759C5B1F46CC46009DADF7 /* newsViewModel */,
+				F8759C5A1F46CC46009DADF7 /* chartViewModel */,
 				F8759C5C1F46CC46009DADF7 /* videoViewModel */,
 			);
 			path = viewModel;
@@ -462,6 +471,8 @@
 		F8759C5C1F46CC46009DADF7 /* videoViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3AD9FCE21F49FC94002EB75B /* LBNCVideoViewModel.h */,
+				3AD9FCE31F49FC94002EB75B /* LBNCVideoViewModel.m */,
 			);
 			path = videoViewModel;
 			sourceTree = "<group>";
@@ -489,6 +500,8 @@
 		F8759C651F46CDE1009DADF7 /* videoNetManager */ = {
 			isa = PBXGroup;
 			children = (
+				3AD9FCE81F49FCE5002EB75B /* LBNCVideoNetManager.h */,
+				3AD9FCE91F49FCE5002EB75B /* LBNCVideoNetManager.m */,
 			);
 			path = videoNetManager;
 			sourceTree = "<group>";
@@ -525,6 +538,8 @@
 		F8759C6F1F46D46E009DADF7 /* LBNCVideoModel */ = {
 			isa = PBXGroup;
 			children = (
+				3AD9FCE51F49FCAC002EB75B /* LBNCVideoModel.h */,
+				3AD9FCE61F49FCAC002EB75B /* LBNCVideoModel.m */,
 			);
 			path = LBNCVideoModel;
 			sourceTree = "<group>";
@@ -727,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD9FCE41F49FC94002EB75B /* LBNCVideoViewModel.m in Sources */,
 				F8F004161F47EE0900DA43EA /* UIColor+CZAddition.m in Sources */,
 				F8759C5F1F46CC67009DADF7 /* LBNCNewsViewModel.m in Sources */,
 				3AD9FCDE1F49E657002EB75B /* LBNCDuanziModel.m in Sources */,
@@ -742,6 +758,7 @@
 				F8F004181F47EE0900DA43EA /* UIScreen+CZAddition.m in Sources */,
 				F8F0041A1F47EE0900DA43EA /* UIViewController+CZAddition.m in Sources */,
 				F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */,
+				3AD9FCE71F49FCAC002EB75B /* LBNCVideoModel.m in Sources */,
 				F8759C811F46E919009DADF7 /* LBNCNewsTableView.m in Sources */,
 				F8759C621F46CD9B009DADF7 /* LBNCBaseNetManager.m in Sources */,
 				F8759C281F468865009DADF7 /* AppDelegate.m in Sources */,
@@ -765,6 +782,7 @@
 				F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */,
 				F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */,
 				3AD9FCB41F4933C1002EB75B /* LBNCImageView.m in Sources */,
+				3AD9FCEA1F49FCE5002EB75B /* LBNCVideoNetManager.m in Sources */,
 				F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */,
 				3AD9FCC01F49574C002EB75B /* BarItem.m in Sources */,
 				F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */,

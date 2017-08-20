@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBNCVideoTableView : UITableView
+@interface LBNCVideoTableView : UITableView<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end

@@ -7,8 +7,13 @@
 //
 
 #import "LBNCVideoController.h"
-
+#import "LBNCVideoTableView.h"
+#import "LBNCVideoViewModel.h"
 @interface LBNCVideoController ()
+// video视图
+@property (nonatomic, strong) LBNCVideoTableView *videoTableView;
+// video视图模型
+@property (nonatomic, strong) LBNCVideoViewModel *videoViewModel;
 
 @end
 
@@ -16,22 +21,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"视频";
+//    [self.videoTableView.mj_header beginRefreshing];
+    [self videoTableView];
 }
+-(LBNCVideoTableView *)videoTableView{
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (_videoTableView == nil) {
+        _videoTableView = [[LBNCVideoTableView alloc]init];
+        [self.view addSubview:_videoTableView];
+        _videoTableView.tableFooterView = [UIView new];
+        [_videoTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(0);
+        }];
+//        _videoTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            [self.videoViewModel refreshDataCompletionHandler:^(NSError *error) {
+                if (!error) {
+                    
+                    _videoTableView.dataArray = self.videoViewModel.dataMArr;
+                    //[_videoTableView reloadData];
+                }
+                [_videoTableView.mj_header endRefreshing];
+            }];
+//        }];
+        _videoTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+            [self.videoViewModel getMoreDataCompletionHandler:^(NSError *error) {
+                if (!error) {
+                    _videoTableView.dataArray = self.videoViewModel.dataMArr;
+                    //[_videoTableView reloadData];
+                }
+                [_videoTableView.mj_footer endRefreshing];
+            }];
+        }];
+    }
+    return _videoTableView;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (LBNCVideoViewModel *)videoViewModel{
+    if (_videoViewModel == nil) {
+        _videoViewModel = [[LBNCVideoViewModel alloc]init];
+    }
+    return _videoViewModel;
 }
-*/
-
 @end
