@@ -18,6 +18,7 @@
 		3AD9FCD21F498062002EB75B /* LBNCChartNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCD11F498062002EB75B /* LBNCChartNetManager.m */; };
 		3AD9FCD51F4980CF002EB75B /* LBNCDuanziNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCD41F4980CF002EB75B /* LBNCDuanziNetManager.m */; };
 		3AD9FCD81F49816F002EB75B /* LBNCChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCD71F49816F002EB75B /* LBNCChartModel.m */; };
+		3AD9FCDB1F49A39D002EB75B /* LBNCChartDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9FCDA1F49A39D002EB75B /* LBNCChartDetailController.m */; };
 		6A7239FDE3F8DB72CFF7D452 /* libPods-LBNewsComing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */; };
 		F8759C0C1F468635009DADF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C0B1F468635009DADF7 /* main.m */; };
 		F8759C151F468635009DADF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8759C131F468635009DADF7 /* Main.storyboard */; };
@@ -82,6 +83,8 @@
 		3AD9FCD41F4980CF002EB75B /* LBNCDuanziNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCDuanziNetManager.m; path = LBNewsComing/Classes/view/chartView/LBNCDuanziNetManager.m; sourceTree = SOURCE_ROOT; };
 		3AD9FCD61F49816F002EB75B /* LBNCChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBNCChartModel.h; path = LBNewsComing/Classes/view/chartView/LBNCChartModel.h; sourceTree = SOURCE_ROOT; };
 		3AD9FCD71F49816F002EB75B /* LBNCChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBNCChartModel.m; path = LBNewsComing/Classes/view/chartView/LBNCChartModel.m; sourceTree = SOURCE_ROOT; };
+		3AD9FCD91F49A39D002EB75B /* LBNCChartDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCChartDetailController.h; sourceTree = "<group>"; };
+		3AD9FCDA1F49A39D002EB75B /* LBNCChartDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCChartDetailController.m; sourceTree = "<group>"; };
 		85324EFC2A18ED7C5CFD4374 /* libPods-LBNewsComing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBNewsComing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B3903665C43C99966A8A10 /* Pods-LBNewsComing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBNewsComing.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBNewsComing/Pods-LBNewsComing.release.xcconfig"; sourceTree = "<group>"; };
 		F8759C071F468635009DADF7 /* LBNewsComing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBNewsComing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +394,8 @@
 			children = (
 				F8759C451F4695CB009DADF7 /* LBNCChartController.h */,
 				F8759C461F4695CB009DADF7 /* LBNCChartController.m */,
+				3AD9FCD91F49A39D002EB75B /* LBNCChartDetailController.h */,
+				3AD9FCDA1F49A39D002EB75B /* LBNCChartDetailController.m */,
 			);
 			path = chart;
 			sourceTree = "<group>";
@@ -721,6 +726,7 @@
 				F8759C531F46BE87009DADF7 /* LBNCListController.m in Sources */,
 				F8759C561F46C6C7009DADF7 /* LBNCDetailController.m in Sources */,
 				3AD9FCD81F49816F002EB75B /* LBNCChartModel.m in Sources */,
+				3AD9FCDB1F49A39D002EB75B /* LBNCChartDetailController.m in Sources */,
 				F8F004181F47EE0900DA43EA /* UIScreen+CZAddition.m in Sources */,
 				F8F0041A1F47EE0900DA43EA /* UIViewController+CZAddition.m in Sources */,
 				F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */,

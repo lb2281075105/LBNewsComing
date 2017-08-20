@@ -10,6 +10,7 @@
 #import "LBNCChartCell.h"
 #import "LBNCDuanziCell.h"
 #import "LBNCChartViewModel.h"
+#import "LBNCChartDetailController.h"
 @interface LBNCChartView()
 // 段子
 @property (nonatomic, strong) UITableView *duanziTableView;
@@ -110,7 +111,6 @@
     return 8;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView == _chartTableView) {
         LBNCChartCell *cell = [LBNCChartCell cellWithTableView:(UITableView *)tableView];
@@ -119,5 +119,10 @@
     }
     LBNCDuanziCell *cell = [LBNCDuanziCell cellWithTableView:(UITableView *)tableView];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    LBNCChartDetailController *chartDetailC = [[LBNCChartDetailController alloc] initWithChartModel:self.dataArray[indexPath.row]];
+    [self.viewController.navigationController pushViewController:chartDetailC animated:YES];
 }
 @end
