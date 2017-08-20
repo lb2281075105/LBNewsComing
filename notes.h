@@ -16,7 +16,7 @@ MJExtension
 MBProgressHUD
 SDCycleScrollView
 iCarousel
-
+MWPhotoBrowser
 4.
 网络封装
 枚举类型
