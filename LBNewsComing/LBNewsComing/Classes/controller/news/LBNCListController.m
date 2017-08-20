@@ -39,17 +39,24 @@
             make.edges.mas_equalTo(@0);
         }];
         // 上拉刷新
-//        _newsTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _newsTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self.newsViewModel refreshDataCompletionHandler:^(NSError *error) {
                 if (!error) {
                     _newsTableView.tableHeaderView = [self setUpTableHeaderView];
                     self.newsTableView.dataArray = self.newsViewModel.dataMArr;
                 }
-                //[_newsTableView.mj_header endRefreshing];
+                [_newsTableView.mj_header endRefreshing];
             }];
-//        }];
+        }];
         // 下拉加载更多
-        
+        _newsTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+            [self.newsViewModel getMoreDataCompletionHandler:^(NSError *error) {
+                if (!error) {
+                    self.newsTableView.dataArray = self.newsViewModel.dataMArr;
+                }
+                [_newsTableView.mj_footer endRefreshing];
+            }];
+        }];
         
     }
     return _newsTableView;
