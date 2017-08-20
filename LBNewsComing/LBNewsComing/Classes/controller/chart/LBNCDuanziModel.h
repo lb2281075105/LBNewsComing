@@ -6,9 +6,8 @@
 //  Copyright © 2017年 刘博. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface LBNCDuanziModel : NSObject
+#import "LBNCBaseModel.h"
+@interface LBNCDuanziModel :LBNCBaseModel
 @property (nonatomic, copy) NSString *avatar;
 @property (nonatomic, copy) NSString *thumbnail;
 @property (nonatomic, copy) NSString *height;

@@ -12,7 +12,7 @@
 + (id)getWordWithPage:(NSInteger)page completionHandler:(void (^)(id, NSError *))completionHandler {
     NSString *path = [NSString stringWithFormat:@"http://joke.luckyamy.com/api/?cat=dz&p=%ld&ap=ymds&ver=1.6", page];
     return [self get:path params:nil completionHandler:^(id responseObj, NSError *error) {
-        LBNCLog(@"%@",responseObj);
+        // LBNCLog(@"%@",responseObj);
         completionHandler([LBNCDuanziModel mj_objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }

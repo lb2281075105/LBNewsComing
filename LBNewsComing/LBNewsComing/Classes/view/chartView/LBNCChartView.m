@@ -12,6 +12,7 @@
 #import "LBNCChartViewModel.h"
 #import "LBNCChartDetailController.h"
 #import "LBNCDuanziViewModel.h"
+#import "LBNCDuanziDetailController.h"
 @interface LBNCChartView()
 // 段子
 @property (nonatomic, strong) UITableView *duanziTableView;
@@ -162,9 +163,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (_index == 0) {
-        
+        // 段子详情页
+        LBNCDuanziDetailController *vc = [[LBNCDuanziDetailController alloc] initWithContent:[self.dataDuanziArray[indexPath.row] text]];
+        [self.viewController.navigationController pushViewController:vc animated:YES];
     }else{
+        // 图文详情页
         LBNCChartDetailController *chartDetailC = [[LBNCChartDetailController alloc] initWithChartModel:self.dataArray[indexPath.row]];
+        chartDetailC.hidesBottomBarWhenPushed = YES;
         [self.viewController.navigationController pushViewController:chartDetailC animated:YES];
     }
 }
