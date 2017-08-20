@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface LBNCDetailController : UIViewController
+// 构造函数：初始化的时候把ID传进来
+- (instancetype)initWithID:(NSInteger)ID;
+@property (nonatomic) NSInteger ID;
 
 @end

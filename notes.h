@@ -15,6 +15,7 @@ MJRefresh
 MJExtension
 MBProgressHUD
 SDCycleScrollView
+iCarousel
 
 4.
 网络封装

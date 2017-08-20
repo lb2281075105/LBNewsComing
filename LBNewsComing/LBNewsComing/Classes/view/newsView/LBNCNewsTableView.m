@@ -8,6 +8,7 @@
 
 #import "LBNCNewsTableView.h"
 #import "LBNCNewsCell.h"
+#import "LBNCDetailController.h"
 @implementation LBNCNewsTableView
 -(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
     self = [super initWithFrame:frame style:style];
@@ -25,7 +26,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
 }
-// 估计cell高度
+// mark -- 估计cell高度 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
@@ -35,5 +36,11 @@
     return cell;
     
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    // 跳转详情页面
+    LBNCDetailController *vc = [[LBNCDetailController alloc] initWithID:[self.dataArray[indexPath.row]ID]];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.viewController.navigationController pushViewController:vc animated:YES];
+}
 @end

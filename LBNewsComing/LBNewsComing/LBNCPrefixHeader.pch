@@ -27,5 +27,7 @@
 #import "CZAdditions.h"
 // 宏定义引入
 #import "LBNCHeader.h"
-//按比例放大、充满 当前视图减掉超出自身区域的图片部分
+// 按比例放大、充满 当前视图减掉超出自身区域的图片部分
 #import "LBNCImageView.h"
+// 获取下一级控制器
+#import "UIView+ViewController.h"
