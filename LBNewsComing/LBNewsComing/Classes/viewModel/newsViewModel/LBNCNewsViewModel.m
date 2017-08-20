@@ -29,9 +29,11 @@
         if (!error){
             if (self.page == 1) {
                 [self.dataMArr removeAllObjects];
+                [self.topDataMArr removeAllObjects];
                 NSMutableArray *mArr = [NSMutableArray new];
                 for (HomeResultFocusimgModel *obj in model.result.focusimg) {
                     [mArr addObject:obj.imgurl];
+                    [self.topDataMArr addObject:obj];
                 }
                 self.headImgURLs = [mArr copy];
             }

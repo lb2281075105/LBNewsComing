@@ -21,6 +21,8 @@ typedef void(^completionHandler)(NSError *error);
 // MARK---<BaseViewModelDelegate>
 @interface LBNCBaseViewModel : NSObject<BaseViewModelDelegate>
 @property (strong, nonatomic) NSMutableArray *dataMArr;
+@property (strong, nonatomic) NSMutableArray *topDataMArr;
+
 @property (strong, nonatomic) NSURLSessionDataTask *dataTask;
 
 // 取消任务

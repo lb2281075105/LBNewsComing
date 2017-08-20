@@ -24,4 +24,11 @@
     }
     return _dataMArr;
 }
+- (NSMutableArray *)topDataMArr {
+    if (!_topDataMArr) {
+        _topDataMArr = [NSMutableArray new];
+    }
+    return _topDataMArr;
+}
+
 @end
