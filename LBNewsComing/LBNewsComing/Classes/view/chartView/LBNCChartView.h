@@ -11,5 +11,6 @@
 @interface LBNCChartView : UIView<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,assign) NSInteger index;
 @property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *dataDuanziArray;
 
 @end

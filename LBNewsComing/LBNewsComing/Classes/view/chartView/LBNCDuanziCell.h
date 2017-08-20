@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LBNCDuanziCell : UITableViewCell
+#import "LBNCDuanziModel.h"
+@interface LBNCDuanziCell : UITableViewCell{
+    
+    UILabel *_contentLabel;
+    UIButton *_zanBtn;
+    UILabel *_dateLabel;
+}
+@property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) UIButton *zanBtn;;
+@property (nonatomic, strong) UILabel *dateLabel;
+@property (nonatomic, strong)LBNCDuanziModel *duanziModel;
 + (instancetype)cellWithTableView:(UITableView *)tableView;
+
 @end

@@ -9,5 +9,5 @@
 #import "LBNCBaseNetManager.h"
 
 @interface LBNCDuanziNetManager : LBNCBaseNetManager
-
++ (id)getWordWithPage:(NSInteger)page kCompletionHandler;
 @end

@@ -9,5 +9,6 @@
 #import "LBNCBaseViewModel.h"
 
 @interface LBNCDuanziViewModel : LBNCBaseViewModel
+@property (nonatomic) NSInteger page;
 
 @end

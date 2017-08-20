@@ -11,12 +11,14 @@
 #import "LBNCDuanziCell.h"
 #import "LBNCChartViewModel.h"
 #import "LBNCChartDetailController.h"
+#import "LBNCDuanziViewModel.h"
 @interface LBNCChartView()
 // 段子
 @property (nonatomic, strong) UITableView *duanziTableView;
 // 图文
 @property (nonatomic, strong) UITableView *chartTableView;
 @property (nonatomic, strong) LBNCChartViewModel *chartViewModel;
+@property (nonatomic, strong) LBNCDuanziViewModel *duanziViewModel;
 
 @end
 
@@ -27,7 +29,7 @@
     if (self) {
         // 加载表视图
         [self setUpTableView];
-        [_chartTableView.mj_header beginRefreshing];
+        [_duanziTableView.mj_header beginRefreshing];
     }
     return self;
 }
@@ -38,6 +40,12 @@
     }
     return _dataArray;
 }
+-(NSMutableArray *)dataDuanziArray{
+    if (_dataDuanziArray == nil) {
+        _dataDuanziArray = [[NSMutableArray alloc]init];
+    }
+    return _dataDuanziArray;
+}
 // 懒加载
 -(LBNCChartViewModel *)chartViewModel{
 
@@ -46,11 +54,19 @@
     }
     return _chartViewModel;
 }
+-(LBNCDuanziViewModel *)duanziViewModel{
+    
+    if (_duanziViewModel == nil) {
+        _duanziViewModel = [[LBNCDuanziViewModel alloc]init];
+    }
+    return _duanziViewModel;
+}
+
 -(void)setIndex:(NSInteger)index{
     _index = index;
     [self setUpTableView];
     if (_index == 0) {
-        
+        [_duanziTableView.mj_header beginRefreshing];
     }else if(_index == 1){
         [_chartTableView.mj_header beginRefreshing];
     }
@@ -58,16 +74,34 @@
 - (void)setUpTableView{
 
     if (_index == 0) {
-        if (_duanziTableView == nil) {
+
             _duanziTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-            _duanziTableView.delegate = self;
-            _duanziTableView.dataSource = self;
-            [self addSubview:_duanziTableView];
-//            self.chartViewModel 
-        }else{
-            [self insertSubview:_duanziTableView aboveSubview:_chartTableView];
-        }
-        
+            _duanziTableView.tableFooterView = [UIView new];
+                _duanziTableView.delegate = self;
+                _duanziTableView.dataSource = self;
+                [self addSubview:_duanziTableView];
+            [_duanziTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(0);
+            }];
+            _duanziTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+                [self.duanziViewModel refreshDataCompletionHandler:^(NSError *error) {
+                    if (!error) {
+                        self.dataDuanziArray = self.duanziViewModel.dataMArr;
+                        [_duanziTableView reloadData];
+                    }
+                    [_duanziTableView.mj_header endRefreshing];
+                }];
+                
+            }];
+            _duanziTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+                [self.duanziViewModel getMoreDataCompletionHandler:^(NSError *error) {
+                    if (!error) {
+                        [_duanziTableView reloadData];
+                    }
+                    [_duanziTableView.mj_footer endRefreshing];
+                }];
+            }];
+
     }else if (_index == 1){
             _chartTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
             _chartTableView.tableFooterView = [UIView new];
@@ -78,7 +112,7 @@
             }];
             _chartTableView.delegate = self;
             _chartTableView.dataSource = self;
-        _chartTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            _chartTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self.chartViewModel refreshDataCompletionHandler:^(NSError *error) {
                 if (!error) {
                     self.dataArray = self.chartViewModel.dataMArr;
@@ -108,7 +142,7 @@
     if (tableView == _chartTableView) {
         return self.dataArray.count;
     }
-    return 8;
+    return _dataDuanziArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -118,11 +152,20 @@
         return cell;
     }
     LBNCDuanziCell *cell = [LBNCDuanziCell cellWithTableView:(UITableView *)tableView];
+    cell.duanziModel = self.dataDuanziArray[indexPath.row];
+    [cell.zanBtn bk_addEventHandler:^(id sender) {
+        [cell.zanBtn setTitle:[NSString stringWithFormat:@"%ld",(cell.duanziModel.zan + 1)] forState:UIControlStateNormal];
+        [self showSuccessWithMsg:@"点赞成功"];
+    } forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    LBNCChartDetailController *chartDetailC = [[LBNCChartDetailController alloc] initWithChartModel:self.dataArray[indexPath.row]];
-    [self.viewController.navigationController pushViewController:chartDetailC animated:YES];
+    if (_index == 0) {
+        
+    }else{
+        LBNCChartDetailController *chartDetailC = [[LBNCChartDetailController alloc] initWithChartModel:self.dataArray[indexPath.row]];
+        [self.viewController.navigationController pushViewController:chartDetailC animated:YES];
+    }
 }
 @end

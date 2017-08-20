@@ -60,6 +60,14 @@ _newsTableView.tableFooterView = [UIView new];
 图文模块：
 [_iconIV.imageView sd_setImageWithURL:_chartModel.pics[0] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
 @property (nonatomic, strong) NSArray<NSURL *> *pics;
+MWPhotoBrowser的使用
+
+_sc.selectedSegmentIndex = 1;
+NSMutableArray *mArr = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+[mArr removeLastObject];
+WordController *vc = [WordController new];
+[mArr addObject:vc];
+self.navigationController.viewControllers = mArr;
 
 
 
