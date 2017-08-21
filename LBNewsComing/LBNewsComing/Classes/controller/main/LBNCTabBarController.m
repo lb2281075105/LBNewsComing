@@ -31,9 +31,9 @@
     ///图文
     [self addChildViewController:[[LBNCChartController alloc]init] withNormalImage:@"live" withSelectImage:@"liveblue" withTitle:@"图文"];
     ///我的
-    [self addChildViewController:[[LBNCMineController alloc]init] withNormalImage:@"my" withSelectImage:@"myblue" withTitle:@"视频"];
+    [self addChildViewController:[[LBNCVideoController alloc]init] withNormalImage:@"market" withSelectImage:@"marketblue" withTitle:@"视频"];
     ///视频
-    [self addChildViewController:[[LBNCVideoController alloc]init] withNormalImage:@"market" withSelectImage:@"marketblue" withTitle:@"我的"];
+    [self addChildViewController:[[LBNCMineController alloc]init] withNormalImage:@"my" withSelectImage:@"myblue" withTitle:@"我的"];
 }
 ///添加子控制器
 - (void)addChildViewController:(UIViewController *)childController withNormalImage:(NSString *)normalImage withSelectImage:(NSString *)selectImage withTitle:(NSString *)title{
