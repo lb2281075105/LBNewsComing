@@ -50,6 +50,7 @@
 		F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C831F46E92C009DADF7 /* LBNCVideoTableView.m */; };
 		F8759C8A1F46E970009DADF7 /* LBNCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C891F46E970009DADF7 /* LBNCNewsCell.m */; };
 		F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */; };
+		F89EEF501F4A696400BD0269 /* LBNCVideoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF4F1F4A696400BD0269 /* LBNCVideoDetailController.m */; };
 		F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003F81F47EE0900DA43EA /* NSArray+Log.m */; };
 		F8F004101F47EE0900DA43EA /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FA1F47EE0900DA43EA /* NSAttributedString+CZAdditon.m */; };
 		F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FC1F47EE0900DA43EA /* NSObject+CZRuntime.m */; };
@@ -151,6 +152,8 @@
 		F8759C891F46E970009DADF7 /* LBNCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsCell.m; sourceTree = "<group>"; };
 		F8759C8B1F46E987009DADF7 /* LBNCVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoCell.h; sourceTree = "<group>"; };
 		F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoCell.m; sourceTree = "<group>"; };
+		F89EEF4E1F4A696400BD0269 /* LBNCVideoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoDetailController.h; sourceTree = "<group>"; };
+		F89EEF4F1F4A696400BD0269 /* LBNCVideoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoDetailController.m; sourceTree = "<group>"; };
 		F8F003F61F47EE0900DA43EA /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		F8F003F71F47EE0900DA43EA /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		F8F003F81F47EE0900DA43EA /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -444,6 +447,8 @@
 			children = (
 				F8759C4B1F4695EE009DADF7 /* LBNCVideoController.h */,
 				F8759C4C1F4695EE009DADF7 /* LBNCVideoController.m */,
+				F89EEF4E1F4A696400BD0269 /* LBNCVideoDetailController.h */,
+				F89EEF4F1F4A696400BD0269 /* LBNCVideoDetailController.m */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -777,6 +782,7 @@
 				3AD9FCCC1F497F0F002EB75B /* LBNCChartViewModel.m in Sources */,
 				F8759C0C1F468635009DADF7 /* main.m in Sources */,
 				F8759C591F46CA23009DADF7 /* LBNCBaseViewModel.m in Sources */,
+				F89EEF501F4A696400BD0269 /* LBNCVideoDetailController.m in Sources */,
 				F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */,
 				F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */,
 				F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */,

@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"视频";
-//    [self.videoTableView.mj_header beginRefreshing];
-    [self videoTableView];
+    [self.videoTableView.mj_header beginRefreshing];
+//    [self videoTableView];
 }
 -(LBNCVideoTableView *)videoTableView{
 
@@ -34,21 +34,18 @@
         [_videoTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(0);
         }];
-//        _videoTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _videoTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self.videoViewModel refreshDataCompletionHandler:^(NSError *error) {
                 if (!error) {
-                    
                     _videoTableView.dataArray = self.videoViewModel.dataMArr;
-                    //[_videoTableView reloadData];
                 }
                 [_videoTableView.mj_header endRefreshing];
             }];
-//        }];
+        }];
         _videoTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
             [self.videoViewModel getMoreDataCompletionHandler:^(NSError *error) {
                 if (!error) {
                     _videoTableView.dataArray = self.videoViewModel.dataMArr;
-                    //[_videoTableView reloadData];
                 }
                 [_videoTableView.mj_footer endRefreshing];
             }];

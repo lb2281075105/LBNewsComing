@@ -17,6 +17,7 @@ MBProgressHUD
 SDCycleScrollView
 iCarousel
 MWPhotoBrowser
+CYLTabBarController
 4.
 网络封装
 枚举类型
@@ -69,5 +70,6 @@ WordController *vc = [WordController new];
 [mArr addObject:vc];
 self.navigationController.viewControllers = mArr;
 
-
+8.
+AVSpeechSynthesizer语音播放声音
 

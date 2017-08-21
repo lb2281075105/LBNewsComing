@@ -39,3 +39,6 @@
 #import "BarItem.h"
 // 图片浏览器
 #import "MWPhotoBrowser.h"
+// 引入AVKit、AVFoundation播放视频
+@import AVKit;
+@import AVFoundation;

@@ -28,7 +28,7 @@
 
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *replyid;
-@property (nonatomic, copy) NSString *mp4_url;
+@property (nonatomic, copy) NSURL *mp4_url;
 @property (nonatomic, assign) NSInteger playCount;
 @property (nonatomic, copy) NSString *replyBoard;
 @property (nonatomic, copy) NSString *vid;
