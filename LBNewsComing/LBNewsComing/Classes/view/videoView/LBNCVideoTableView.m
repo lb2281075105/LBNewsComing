@@ -8,9 +8,12 @@
 
 #import "LBNCVideoTableView.h"
 #import "LBNCVideoCell.h"
-#import "LBNCVideoDetailController.h"
 #import "LBNCVideoModel.h"
-@implementation LBNCVideoTableView
+
+@implementation LBNCVideoTableView{
+
+    AVPlayerViewController *_vc;
+}
 
 -(void)setDataArray:(NSMutableArray *)dataArray{
     _dataArray = dataArray;
@@ -44,11 +47,13 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
     // 音视频播放器
-    AVPlayerViewController *vc = [AVPlayerViewController new];
+    _vc = [AVPlayerViewController new];
+    _vc.delegate = self;
     VideoVideolistModel *videoModel = self.dataArray[indexPath.row];
     AVPlayer *player = [AVPlayer playerWithURL:[videoModel mp4_url]];
-    vc.player = player;
-    [self.viewController presentViewController:vc animated:YES completion:nil];
-    [vc.player play];
+    _vc.player = player;
+    [self.viewController presentViewController:_vc animated:YES completion:nil];
+    [_vc.player play];
 }
+
 @end
