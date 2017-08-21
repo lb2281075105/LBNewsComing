@@ -73,3 +73,6 @@ self.navigationController.viewControllers = mArr;
 8.
 AVSpeechSynthesizer语音播放声音
 
+9.
+AVKit、AVFoudation播放视频
+

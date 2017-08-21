@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LBNCMineController : UIViewController
-
+@property (strong, nonatomic) UILabel *label;
 @end

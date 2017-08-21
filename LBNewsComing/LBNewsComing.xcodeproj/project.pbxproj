@@ -50,6 +50,9 @@
 		F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C831F46E92C009DADF7 /* LBNCVideoTableView.m */; };
 		F8759C8A1F46E970009DADF7 /* LBNCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C891F46E970009DADF7 /* LBNCNewsCell.m */; };
 		F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */; };
+		F89EEF541F4A784700BD0269 /* LBNCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF531F4A784700BD0269 /* LBNCHeaderView.m */; };
+		F89EEF571F4A7AC100BD0269 /* LBNCSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */; };
+		F89EEF5A1F4A7B3700BD0269 /* LBNCLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */; };
 		F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003F81F47EE0900DA43EA /* NSArray+Log.m */; };
 		F8F004101F47EE0900DA43EA /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FA1F47EE0900DA43EA /* NSAttributedString+CZAdditon.m */; };
 		F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FC1F47EE0900DA43EA /* NSObject+CZRuntime.m */; };
@@ -151,6 +154,12 @@
 		F8759C891F46E970009DADF7 /* LBNCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCNewsCell.m; sourceTree = "<group>"; };
 		F8759C8B1F46E987009DADF7 /* LBNCVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCVideoCell.h; sourceTree = "<group>"; };
 		F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCVideoCell.m; sourceTree = "<group>"; };
+		F89EEF521F4A784700BD0269 /* LBNCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCHeaderView.h; sourceTree = "<group>"; };
+		F89EEF531F4A784700BD0269 /* LBNCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCHeaderView.m; sourceTree = "<group>"; };
+		F89EEF551F4A7AC100BD0269 /* LBNCSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCSettingController.h; sourceTree = "<group>"; };
+		F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCSettingController.m; sourceTree = "<group>"; };
+		F89EEF581F4A7B3700BD0269 /* LBNCLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCLoginRegisterController.h; sourceTree = "<group>"; };
+		F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCLoginRegisterController.m; sourceTree = "<group>"; };
 		F8F003F61F47EE0900DA43EA /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		F8F003F71F47EE0900DA43EA /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		F8F003F81F47EE0900DA43EA /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -317,6 +326,7 @@
 		F8759C2A1F4688F0009DADF7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F89EEF511F4A781B00BD0269 /* mineView */,
 				F8759C791F46E881009DADF7 /* chartView */,
 				F8759C7A1F46E881009DADF7 /* newsView */,
 				F8759C7B1F46E881009DADF7 /* videoView */,
@@ -422,6 +432,10 @@
 			children = (
 				F8759C421F4695BA009DADF7 /* LBNCMineController.h */,
 				F8759C431F4695BA009DADF7 /* LBNCMineController.m */,
+				F89EEF551F4A7AC100BD0269 /* LBNCSettingController.h */,
+				F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */,
+				F89EEF581F4A7B3700BD0269 /* LBNCLoginRegisterController.h */,
+				F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -577,6 +591,15 @@
 				F8759C8C1F46E987009DADF7 /* LBNCVideoCell.m */,
 			);
 			path = videoView;
+			sourceTree = "<group>";
+		};
+		F89EEF511F4A781B00BD0269 /* mineView */ = {
+			isa = PBXGroup;
+			children = (
+				F89EEF521F4A784700BD0269 /* LBNCHeaderView.h */,
+				F89EEF531F4A784700BD0269 /* LBNCHeaderView.m */,
+			);
+			path = mineView;
 			sourceTree = "<group>";
 		};
 		F8F003F51F47EE0900DA43EA /* Additions */ = {
@@ -755,11 +778,13 @@
 				F8759C561F46C6C7009DADF7 /* LBNCDetailController.m in Sources */,
 				3AD9FCD81F49816F002EB75B /* LBNCChartModel.m in Sources */,
 				3AD9FCDB1F49A39D002EB75B /* LBNCChartDetailController.m in Sources */,
+				F89EEF5A1F4A7B3700BD0269 /* LBNCLoginRegisterController.m in Sources */,
 				F8F004181F47EE0900DA43EA /* UIScreen+CZAddition.m in Sources */,
 				F8F0041A1F47EE0900DA43EA /* UIViewController+CZAddition.m in Sources */,
 				F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */,
 				3AD9FCE71F49FCAC002EB75B /* LBNCVideoModel.m in Sources */,
 				F8759C811F46E919009DADF7 /* LBNCNewsTableView.m in Sources */,
+				F89EEF541F4A784700BD0269 /* LBNCHeaderView.m in Sources */,
 				F8759C621F46CD9B009DADF7 /* LBNCBaseNetManager.m in Sources */,
 				F8759C281F468865009DADF7 /* AppDelegate.m in Sources */,
 				3AD9FCC31F496CF9002EB75B /* LBNCChartView.m in Sources */,
@@ -777,6 +802,7 @@
 				3AD9FCCC1F497F0F002EB75B /* LBNCChartViewModel.m in Sources */,
 				F8759C0C1F468635009DADF7 /* main.m in Sources */,
 				F8759C591F46CA23009DADF7 /* LBNCBaseViewModel.m in Sources */,
+				F89EEF571F4A7AC100BD0269 /* LBNCSettingController.m in Sources */,
 				F8759C751F46D491009DADF7 /* LBNCNewsModel.m in Sources */,
 				F8759C841F46E92C009DADF7 /* LBNCVideoTableView.m in Sources */,
 				F8759C8D1F46E987009DADF7 /* LBNCVideoCell.m in Sources */,
