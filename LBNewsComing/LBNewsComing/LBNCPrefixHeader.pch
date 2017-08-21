@@ -42,3 +42,6 @@
 // 引入AVKit、AVFoundation播放视频
 @import AVKit;
 @import AVFoundation;
+#import <BmobSDK/Bmob.h>
+//注册及登录
+#import <BmobSDK/BmobUser.h>

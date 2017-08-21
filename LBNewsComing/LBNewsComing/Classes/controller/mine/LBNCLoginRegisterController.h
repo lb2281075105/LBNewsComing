@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LBNCLoginRegisterController : UIViewController
-
+@property (strong, nonatomic) UITextField *usernameTF;
 @end

@@ -9,5 +9,5 @@ pod 'SDWebImage', '~> 3.8.1'
 pod 'SDCycleScrollView'
 pod 'BlocksKit', '~> 2.2.5'
 pod 'MWPhotoBrowser', '~> 2.1.0'
-
+pod 'BmobSDK', '~> 1.7.2'
 end

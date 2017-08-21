@@ -18,6 +18,31 @@ SDCycleScrollView
 iCarousel
 MWPhotoBrowser
 CYLTabBarController
+//Cell滑动，出现多个功能按钮
+TPKeyboardAvoiding
+SWTableViewCell
+//QQ的左侧菜单风格
+#import <RESideMenu.h>
+//闪光效果
+#import <FBShimmeringView.h>
+#import <FBShimmeringLayer.h>
+
+//扁平化风格
+#import <FlatUIKit.h>
+
+//第三方对数据库的操作类库，是对系统Sqlite3的封装；使用SQL语句操作数据库
+#import <FMDB/FMDB.h>
+//改变系统的target+selector模式为 block模式,带来紧凑的代码风格，高效率的回调执行
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+
+pod 'FMDB', '~> 2.6.2'
+pod 'CocoaLumberjack', '~> 2.3.0'
+pod 'Shimmer', '~> 1.0.0'
+pod 'FlatUIKit', '~> 1.6.2'
+pod 'RESideMenu', '~> 4.0.7'
+
 4.
 网络封装
 枚举类型
@@ -75,4 +100,6 @@ AVSpeechSynthesizer语音播放声音
 
 9.
 AVKit、AVFoudation播放视频
+10.
 
+分享未做

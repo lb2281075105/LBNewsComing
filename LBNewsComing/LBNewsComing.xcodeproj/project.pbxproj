@@ -53,6 +53,7 @@
 		F89EEF541F4A784700BD0269 /* LBNCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF531F4A784700BD0269 /* LBNCHeaderView.m */; };
 		F89EEF571F4A7AC100BD0269 /* LBNCSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */; };
 		F89EEF5A1F4A7B3700BD0269 /* LBNCLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */; };
+		F89EEF5D1F4A930E00BD0269 /* LBNCRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89EEF5C1F4A930E00BD0269 /* LBNCRegisterController.m */; };
 		F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003F81F47EE0900DA43EA /* NSArray+Log.m */; };
 		F8F004101F47EE0900DA43EA /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FA1F47EE0900DA43EA /* NSAttributedString+CZAdditon.m */; };
 		F8F004111F47EE0900DA43EA /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F003FC1F47EE0900DA43EA /* NSObject+CZRuntime.m */; };
@@ -160,6 +161,8 @@
 		F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCSettingController.m; sourceTree = "<group>"; };
 		F89EEF581F4A7B3700BD0269 /* LBNCLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCLoginRegisterController.h; sourceTree = "<group>"; };
 		F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCLoginRegisterController.m; sourceTree = "<group>"; };
+		F89EEF5B1F4A930E00BD0269 /* LBNCRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNCRegisterController.h; sourceTree = "<group>"; };
+		F89EEF5C1F4A930E00BD0269 /* LBNCRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNCRegisterController.m; sourceTree = "<group>"; };
 		F8F003F61F47EE0900DA43EA /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		F8F003F71F47EE0900DA43EA /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		F8F003F81F47EE0900DA43EA /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -436,6 +439,8 @@
 				F89EEF561F4A7AC100BD0269 /* LBNCSettingController.m */,
 				F89EEF581F4A7B3700BD0269 /* LBNCLoginRegisterController.h */,
 				F89EEF591F4A7B3700BD0269 /* LBNCLoginRegisterController.m */,
+				F89EEF5B1F4A930E00BD0269 /* LBNCRegisterController.h */,
+				F89EEF5C1F4A930E00BD0269 /* LBNCRegisterController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -755,7 +760,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -809,6 +814,7 @@
 				F8759C6C1F46D216009DADF7 /* LBNCNewsNetManager.m in Sources */,
 				3AD9FCB41F4933C1002EB75B /* LBNCImageView.m in Sources */,
 				3AD9FCEA1F49FCE5002EB75B /* LBNCVideoNetManager.m in Sources */,
+				F89EEF5D1F4A930E00BD0269 /* LBNCRegisterController.m in Sources */,
 				F8759C721F46D476009DADF7 /* LBNCBaseModel.m in Sources */,
 				3AD9FCC01F49574C002EB75B /* BarItem.m in Sources */,
 				F8F0040F1F47EE0900DA43EA /* NSArray+Log.m in Sources */,
