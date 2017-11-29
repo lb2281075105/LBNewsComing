@@ -4,14 +4,11 @@
 
 ### 笔记记实
 
-1.
-初始化项目，创建标签栏。<br>
-2.
-为导航栏设置背景，为导航栏标题设置颜色、字体，为状态栏设置颜色。
+1.初始化项目，创建标签栏。<br>
+2.为导航栏设置背景，为导航栏标题设置颜色、字体，为状态栏设置颜色。
 View controller-based status bar appearance 在info中设置NO；在导航控制器中+(void)initialize{}方法中设置状态栏颜色。<br>
 
-3.
-第三方框架
+3.第三方框架
 WMPageController(用于滑动控制器)
 AFNetworking
 MJRefresh
@@ -46,8 +43,7 @@ pod 'Shimmer', '~> 1.0.0'
 pod 'FlatUIKit', '~> 1.6.2'
 pod 'RESideMenu', '~> 4.0.7'<br>
 
-4.
-网络封装
+4.网络封装
 枚举类型
 MVVM模式：
 (1)viewModel里面处理的是加载网络数据,把模型数组传过去。
@@ -67,8 +63,7 @@ pics = (
         http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG054GI0096.jpg,
         http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG154GI0096.jpg,
         );<br>
-5.
-注意block delegate 一块使用
+5.注意block delegate 一块使用
 LBNCBaseViewModel
 为自己设置代理，但是没有代理属性
 [self.dataMArr addObjectsFromArray:model.result.newslist];
