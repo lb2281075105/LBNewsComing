@@ -9,6 +9,7 @@ iOS仿新闻项目共分为四个模块，分别是新闻来了、图文、视�
 1、首页展示模块
 
 ![主页.png](http://upload-images.jianshu.io/upload_images/3276082-226dc44e8c848cdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<br>
 主页主要有滑动的标题、轮播图以及列表组成，布局很简单实现，也已经封装在代码中了，详细请看源码。<br>
 <br>
 2、图文模块
