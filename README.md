@@ -5,10 +5,10 @@
 ### 笔记记实
 
 1.
-初始化项目，创建标签栏。
+初始化项目，创建标签栏。<br>
 2.
 为导航栏设置背景，为导航栏标题设置颜色、字体，为状态栏设置颜色。
-View controller-based status bar appearance 在info中设置NO；在导航控制器中+(void)initialize{}方法中设置状态栏颜色。
+View controller-based status bar appearance 在info中设置NO；在导航控制器中+(void)initialize{}方法中设置状态栏颜色。<br>
 
 3.
 第三方框架
@@ -44,7 +44,7 @@ pod 'FMDB', '~> 2.6.2'
 pod 'CocoaLumberjack', '~> 2.3.0'
 pod 'Shimmer', '~> 1.0.0'
 pod 'FlatUIKit', '~> 1.6.2'
-pod 'RESideMenu', '~> 4.0.7'
+pod 'RESideMenu', '~> 4.0.7'<br>
 
 4.
 网络封装
@@ -66,7 +66,7 @@ pics = (
         http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAFV54GI0096.jpg,
         http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG054GI0096.jpg,
         http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG154GI0096.jpg,
-        );
+        );<br>
 5.
 注意block delegate 一块使用
 LBNCBaseViewModel
@@ -81,10 +81,10 @@ LBNCBaseViewModel
 
 // mark -- 加载失败时候，使表视图cell消失
 _newsTableView.tableFooterView = [UIView new];
-
+<br>
 6.
 构造函数传递参数initWithID
-
+<br>
 7.
 图文模块：
 [_iconIV.imageView sd_setImageWithURL:_chartModel.pics[0] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
@@ -97,13 +97,15 @@ NSMutableArray *mArr = [NSMutableArray arrayWithArray:self.navigationController.
 WordController *vc = [WordController new];
 [mArr addObject:vc];
 self.navigationController.viewControllers = mArr;
-
+<br>
 8.
 AVSpeechSynthesizer语音播放声音
-
+<br>
 9.
 AVKit、AVFoudation播放视频
+<br>
 10.
 
 分享未做
+<br>
 
