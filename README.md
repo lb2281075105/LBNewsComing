@@ -9,20 +9,20 @@ iOS仿新闻项目共分为四个模块，分别是新闻来了、图文、视�
 1、首页展示模块
 
 ![主页.png](http://upload-images.jianshu.io/upload_images/3276082-226dc44e8c848cdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-主页主要有滑动的标题、轮播图以及列表组成，布局很简单实现，也已经封装在代码中了，详细请看源码。
+主页主要有滑动的标题、轮播图以及列表组成，布局很简单实现，也已经封装在代码中了，详细请看源码。<br>
 2、图文模块
 ![段子.png](http://upload-images.jianshu.io/upload_images/3276082-04ed73463471eaa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<br>
 ![语音读段子.png](http://upload-images.jianshu.io/upload_images/3276082-b1df64a0c94045a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<br>
 ![图片.png](http://upload-images.jianshu.io/upload_images/3276082-236ac4f4fd565dcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<br>
 3、视频模块
 ![视频.png](http://upload-images.jianshu.io/upload_images/3276082-e83bbc5a460c7fd6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<br>
 4、我的模块
 ![我的.png](http://upload-images.jianshu.io/upload_images/3276082-504580259740f7be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<br>
 二、项目所用到的框架
 
 下面列举下项目中用到的框架，怎么使用可以到Github上面搜索使用
@@ -43,6 +43,7 @@ end
 ```
 项目目录
 ![项目目录.png](http://upload-images.jianshu.io/upload_images/3276082-0e3162bb2759b36b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<br>
 
 三、项目心得体会
 
