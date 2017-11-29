@@ -1,106 +1,55 @@
 # LBNewsComing
-新闻类项目，MVVM架构设计，推荐有经验和初学者学习。
 
+今天分享了[ReactNative 仿美团项目](http://www.jianshu.com/p/8ab88851c252)，浏览量增加，尽管没有得到更多的喜欢，但是这也激励了我，我把之前做的[Github--iOS仿新闻项目](https://github.com/lb2281075105/LBNewsComing.git)也分享出来，源码放在Github上面了，简书请移步[简书--iOS仿新闻项目](http://www.jianshu.com/p/5a1b2e2bcf10)希望得到大家的喜欢，多多star哦。
 
-### 笔记记实
+iOS仿新闻项目共分为四个模块，分别是新闻来了、图文、视频以及我的四个模块，新闻项目用到了一些框架，会在项目简单介绍中一一列出来，整个项目用了MVVM架构模式，更加适合有经验和初学者学习，接下来简单介绍下项目的组成。
 
-1.初始化项目，创建标签栏。<br>
-2.为导航栏设置背景，为导航栏标题设置颜色、字体，为状态栏设置颜色。
-View controller-based status bar appearance 在info中设置NO；在导航控制器中+(void)initialize{}方法中设置状态栏颜色。<br>
+一、项目的结构设计
 
-3.第三方框架
-WMPageController(用于滑动控制器)
-AFNetworking
-MJRefresh
-MJExtension
-MBProgressHUD
-SDCycleScrollView
-iCarousel
-MWPhotoBrowser
-CYLTabBarController
-//Cell滑动，出现多个功能按钮
-TPKeyboardAvoiding
-SWTableViewCell
-//QQ的左侧菜单风格
-#import <RESideMenu.h>
-//闪光效果
-#import <FBShimmeringView.h>
-#import <FBShimmeringLayer.h>
+1、首页展示模块
 
-//扁平化风格
-#import <FlatUIKit.h>
+![主页.png](http://upload-images.jianshu.io/upload_images/3276082-226dc44e8c848cdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+主页主要有滑动的标题、轮播图以及列表组成，布局很简单实现，也已经封装在代码中了，详细请看源码。
+2、图文模块
+![段子.png](http://upload-images.jianshu.io/upload_images/3276082-04ed73463471eaa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-//第三方对数据库的操作类库，是对系统Sqlite3的封装；使用SQL语句操作数据库
-#import <FMDB/FMDB.h>
-//改变系统的target+selector模式为 block模式,带来紧凑的代码风格，高效率的回调执行
-#import <BlocksKit.h>
-#import <BlocksKit+MessageUI.h>
-#import <BlocksKit+UIKit.h>
+![语音读段子.png](http://upload-images.jianshu.io/upload_images/3276082-b1df64a0c94045a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-pod 'FMDB', '~> 2.6.2'
-pod 'CocoaLumberjack', '~> 2.3.0'
-pod 'Shimmer', '~> 1.0.0'
-pod 'FlatUIKit', '~> 1.6.2'
-pod 'RESideMenu', '~> 4.0.7'<br>
+![图片.png](http://upload-images.jianshu.io/upload_images/3276082-236ac4f4fd565dcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-4.网络封装
-枚举类型
-MVVM模式：
-(1)viewModel里面处理的是加载网络数据,把模型数组传过去。
-(2)model里面：
-/** 属性为数组 对应相应的解析类 */
-+ (NSDictionary *)objectClassInArray{
-    return @{@"newslist" : [HomeResultNewslistModel class], @"focusimg" : [HomeResultFocusimgModel class]};
-}
-+ (NSDictionary *)mj_replacedKeyFromPropertyName {
-    return @{@"ID":@"id"};
-}
-/** 属性为字典 对应相应的解析类 */
-(3)view model viewModel 每个类都需要分开写
+3、视频模块
+![视频.png](http://upload-images.jianshu.io/upload_images/3276082-e83bbc5a460c7fd6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-pics = (
-        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAFV54GI0096.jpg,
-        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG054GI0096.jpg,
-        http://img3.cache.netease.com/photo/0096/2015-11-17/B8LBTAG154GI0096.jpg,
-        );<br>
-5.注意block delegate 一块使用
-LBNCBaseViewModel
-为自己设置代理，但是没有代理属性
-[self.dataMArr addObjectsFromArray:model.result.newslist];
-// 估计cell高度
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return UITableViewAutomaticDimension;
-}
-// 状态栏的加载框
-[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+4、我的模块
+![我的.png](http://upload-images.jianshu.io/upload_images/3276082-504580259740f7be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-// mark -- 加载失败时候，使表视图cell消失
-_newsTableView.tableFooterView = [UIView new];
-<br>
-6.
-构造函数传递参数initWithID
-<br>
-7.
-图文模块：
-[_iconIV.imageView sd_setImageWithURL:_chartModel.pics[0] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
-@property (nonatomic, strong) NSArray<NSURL *> *pics;
-MWPhotoBrowser的使用
+二、项目所用到的框架
 
-_sc.selectedSegmentIndex = 1;
-NSMutableArray *mArr = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
-[mArr removeLastObject];
-WordController *vc = [WordController new];
-[mArr addObject:vc];
-self.navigationController.viewControllers = mArr;
-<br>
-8.
-AVSpeechSynthesizer语音播放声音
-<br>
-9.
-AVKit、AVFoudation播放视频
-<br>
-10.
+下面列举下项目中用到的框架，怎么使用可以到Github上面搜索使用
+```
+target 'LBNewsComing' do
+pod 'WMPageController', '~> 1.8.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'MBProgressHUD', '~> 0.9'
+pod 'MJExtension', '~> 3.0.13'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'Masonry', '~> 1.0.1'
+pod 'SDWebImage', '~> 3.8.1'
+pod 'SDCycleScrollView'
+pod 'BlocksKit', '~> 2.2.5'
+pod 'MWPhotoBrowser', '~> 2.1.0'
+pod 'BmobSDK', '~> 1.7.2'
+end
+```
+项目目录
+![项目目录.png](http://upload-images.jianshu.io/upload_images/3276082-0e3162bb2759b36b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-分享未做
-<br>
+三、项目心得体会
+
+项目很简单，思想不用多说，主要是MVVM设计模式，如果想更加清楚项目结构，请看源代码[iOS仿新闻项目](https://github.com/lb2281075105/LBNewsComing.git)，层次清晰，阅读起来很方便，遇到什么疑惑和困难，可以在下面评论，我看会会及时回复的issues me哦。
+
+iOS仿新闻项目主要是练习MVVM设计模式，通过学习学习到了很多，也把这个项目分享出来，和大家一起学习，项目源码可以点击链接[iOS仿新闻项目](https://github.com/lb2281075105/LBNewsComing.git)获取，如果有不妥的地方，欢迎提建议的小伙伴，合理我会及时修正，还是那句话，实战会使自己学习的更多，因为项目中有很多细节需要处理，我感觉作为程序员能力是一方面，细心也是很重要的，细节决定成败嘛，哈哈哈，还是很开心，把开源项目分享给大家一起学习，喜欢就留下Star，谢谢您。
+
+[我的简书](http://www.jianshu.com/u/23e8548ff67f)也会不断更文，目的是督促自己学习，另一方面分享给大家，共享、共勉。
+
 
