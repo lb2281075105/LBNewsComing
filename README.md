@@ -1,9 +1,5 @@
 # LBNewsComing
 
-
-公众号: 全栈Style 后期还会有新项目更新,又需要的可以关注一下哦 \n
-<img src="wechat.jpg" width="375">
-
 今天分享了[ReactNative 仿美团项目](http://www.jianshu.com/p/8ab88851c252)，浏览量增加，尽管没有得到更多的喜欢，但是这也激励了我，我把之前做的[Github--iOS仿新闻项目](https://github.com/lb2281075105/LBNewsComing.git)也分享出来，源码放在Github上面了，简书请移步[简书--iOS仿新闻项目](http://www.jianshu.com/p/5a1b2e2bcf10)希望得到大家的喜欢，多多star哦。
 
 iOS仿新闻项目共分为四个模块，分别是新闻来了、图文、视频以及我的四个模块，新闻项目用到了一些框架，会在项目简单介绍中一一列出来，整个项目用了MVVM架构模式，更加适合有经验和初学者学习，接下来简单介绍下项目的组成。
